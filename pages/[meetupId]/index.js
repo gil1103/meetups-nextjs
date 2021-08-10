@@ -35,7 +35,8 @@ export async function getStaticPaths() {
 	client.close();
 
 	return {
-		fallback: false, // if visiting a page which its id doesnt exit-he will get 404 page
+		fallback: 'blocking', // if visiting a page which its id doesnt exit-he will get 404 page,
+		// if fallback is blocking, it means it wont appear untill all data reloaded
 		paths: meetups.map((meetup) => ({
 			params: { meetupId: meetup._id.toString() }
 		}))

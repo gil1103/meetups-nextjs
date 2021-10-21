@@ -8,7 +8,7 @@ function HomePage(props) {
 	return (
 		<Fragment>
 			<Head>
-				<title>React Meetups</title>
+				<title>My Meetups</title>
 				<meta
 					name="description"
 					content="browse a huge list of highly active React meetups!"

@@ -1,39 +1,87 @@
 .header {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #77002e;
-  padding: 0 10%;
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #183c6a;
+	padding: 0 10%;
+}
+
+@media only screen and (max-width: 600px) {
+	.header {
+		padding: 0 5%;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
 }
 
 .logo {
-  font-size: 2rem;
-  color: white;
-  font-weight: bold;
+	font-size: 2rem;
+	color: white;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		font-size: 1.1rem;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
 }
 
 .header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: baseline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: baseline;
+	width: 100%;
+	justify-content: right;
+}
+
+@media only screen and (max-width: 600px) {
+	.header ul {
+		display: flex;
+		align-items: center;
+		padding-right: 5%;
+	}
 }
 
 .header li {
-  margin-left: 3rem;
+	margin-left: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.header li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .header a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #fcb8d2;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #fcb8d2;
 }
 
+@media only screen and (max-width: 600px) {
+	.header a {
+		font-size: 1rem;
+		text-align: center;
+	}
+}
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: white;
+	color: white;
 }
